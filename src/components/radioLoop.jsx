@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import React from 'react';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'unistore/react';
-import { actions, store } from '../store/store';
+import { actions } from '../store/store';
 
 const OptionLoop = (props) =>
 {

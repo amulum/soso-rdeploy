@@ -1,16 +1,18 @@
 // card item details di page product/sesuatu
-import React, { Component } from 'react';
-import Header from '../components/header';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'unistore/react';
 import { actions, store } from '../store/store';
 import '../style/cardDetails.css';
 
-class CardDetails extends React.Component {
-  handleBagState = async () => {
+class CardDetails extends React.Component
+{
+  handleBagState = async () =>
+  {
     // jalankan fungsi nembak axios
     // push ke bag
-    if (localStorage.getItem('isLogin')) {
+    if (localStorage.getItem('isLogin'))
+    {
       await store.setState({ productToBag: this.props.product_id });
       console.log('handlebagstate', this.props.productToBag);
       await store.setState({ amountToBag: 1 });
@@ -18,17 +20,20 @@ class CardDetails extends React.Component {
 
       await this.props.postProductToBag();
       await this.props.history.push('/mybag');
-    } else {
+    } else
+    {
       alert('Please Login to get your item :)');
       await this.props.history.push('/login');
     }
   };
 
-  handleOrderState = () => {
+  handleOrderState = () =>
+  {
     // jalankan fungsi nembak axios
     // push ke bag
   };
-  render() {
+  render()
+  {
     return (
       <div class="card">
         <div class="container-fliud">
@@ -36,19 +41,19 @@ class CardDetails extends React.Component {
             <div class="preview col-md-6">
               <div class="preview-pic tab-content">
                 <div class="tab-pane active" id="pic-1">
-                  <img src={this.props.image_path} />
+                  <img src={this.props.image_path} alt="" />
                 </div>
                 <div class="tab-pane" id="pic-2">
-                  <img src={this.props.image_path} />
+                  <img src={this.props.image_path} alt="" />
                 </div>
                 <div class="tab-pane" id="pic-3">
-                  <img src={this.props.image_path} />
+                  <img src={this.props.image_path} alt="" />
                 </div>
                 <div class="tab-pane" id="pic-4">
-                  <img src={this.props.image_path} />
+                  <img src={this.props.image_path} alt="" />
                 </div>
                 <div class="tab-pane" id="pic-5">
-                  <img src={this.props.image_path} />
+                  <img src={this.props.image_path} alt="" />
                 </div>
               </div>
               <ul class="preview-thumbnail nav nav-tabs">

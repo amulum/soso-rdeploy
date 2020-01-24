@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../components/header';
 import OptionLoop from '../components/optionLoop';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'unistore/react';
-import { actions, store } from '../store/store';
+import { actions } from '../store/store';
 import DetailAddress from '../components/detailAddress'
 import RadioLoop from '../components/radioLoop';
 // review order

@@ -1,8 +1,4 @@
 import React from 'react';
-import Header from '../components/header';
-import BannerCarousel from '../components/bannerCarousel';
-import CardProduct from '../components/cardProduct';
-import Footer from '../components/footer';
 
 import { withRouter, Link } from 'react-router-dom';
 import { connect } from 'unistore/react';

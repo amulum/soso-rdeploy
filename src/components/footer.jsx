@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from '../components/header';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'unistore/react';
-import { actions, store } from '../store/store';
+import { actions } from '../store/store';
 import '../style/footer.css';
 
 class Footer extends React.Component
@@ -13,42 +12,42 @@ class Footer extends React.Component
       <footer class='footer-bs'>
         <div class='row'>
           <div class='col-md-3 footer-brand animated fadeInLeft'>
-            <img src={require('../images/logo192.png')} />
+            <img src={require('../images/logo192.png')} alt="" />
           </div>
           <div class='col-md-4 footer-nav animated fadeInUp'>
             <h4>Our Products —</h4>
             <div class='col-md-6'>
               <ul class='pages'>
                 <li>
-                  <a href='#'>Skin Care</a>
+                  <a href='/department/1'>Skin Care</a>
                 </li>
                 <li>
-                  <a href='#'>Makeup</a>
+                  <a href='/department/2'>Makeup</a>
                 </li>
                 <li>
-                  <a href='#'>Hair Care</a>
+                  <a href='/department/3'>Hair Care</a>
                 </li>
                 <li>
-                  <a href='#'>Bath and Body</a>
+                  <a href='/department/4'>Bath and Body</a>
                 </li>
                 <li>
-                  <a href='#'>Accressoris</a>
+                  <a href='/department/5'>Accressoris</a>
                 </li>
               </ul>
             </div>
             <div class='col-md-6'>
               <ul class='list'>
                 <li>
-                  <a href='#'>About Us</a>
+                  <a href='/notMatch'>About Us</a>
                 </li>
                 <li>
-                  <a href='#'>Contacts</a>
+                  <a href='/notMatch'>Contacts</a>
                 </li>
                 <li>
-                  <a href='#'>Terms & Condition</a>
+                  <a href='/notMatch'>Terms & Condition</a>
                 </li>
                 <li>
-                  <a href='#'>Privacy Policy</a>
+                  <a href='/notMatch'>Privacy Policy</a>
                 </li>
               </ul>
             </div>
@@ -57,13 +56,13 @@ class Footer extends React.Component
             <h4>Follow Us</h4>
             <ul>
               <li>
-                <a href='#'>Facebook</a>
+                <a href='/notMatch'>Facebook</a>
               </li>
               <li>
-                <a href='#'>Twitter</a>
+                <a href='/notMatch'>Twitter</a>
               </li>
               <li>
-                <a href='#'>Instagram</a>
+                <a href='/notMatch'>Instagram</a>
               </li>
             </ul>
           </div>

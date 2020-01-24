@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../components/header';
 import CardBag from '../components/cardBag';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'unistore/react';
-import { actions, store } from '../store/store';
+import { actions } from '../store/store';
 import '../style/myBag.css';
 
 class MyBag extends React.Component
