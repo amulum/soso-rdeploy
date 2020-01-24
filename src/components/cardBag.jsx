@@ -1,21 +1,23 @@
-import React, { Component } from 'react';
-import Header from '../components/header';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'unistore/react';
-import { actions, store } from '../store/store';
+import { actions } from '../store/store';
 
-class CardBag extends React.Component {
-  render() {
+class CardBag extends React.Component
+{
+  render()
+  {
     return (
       // card panjang ada image name qty tombol + minus sub total
       <tr>
         <td class="col-sm-8 col-md-6">
           <div class="media">
-            <a class="thumbnail pull-left" href="#">
+            <a class="thumbnail pull-left" href={`/product/${ this.props.name }`}>
               <img
                 class="media-object"
                 src={this.props.image_path}
                 style={{ width: '72px', height: '72px' }}
+                alt=""
               />
             </a>
             <div class="media-body">

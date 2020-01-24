@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../components/header';
 import { withRouter, Redirect } from 'react-router-dom';
 import { connect } from 'unistore/react';
-import { actions, store } from '../store/store';
+import { actions } from '../store/store';
 
 // idenya pake .match.params
 // ada 3 path 
@@ -34,6 +34,7 @@ class Profile extends React.Component
                     <img
                       src={require(`../images/avatar1.png`)}
                       className="card-img rounded-circle"
+                      alt=""
                     />
                   </div>
                 </div>
