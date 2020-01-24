@@ -9,6 +9,8 @@ env:
   global:
   - TRAVIS_ALLOW_FAILURE=false
 install:
+- rm -rf node_modules/
+- rm package-lock.json
 - npm install
 before_script:
 - mkdir ~/.aws
