@@ -91,7 +91,7 @@ class Home extends React.Component
           <div className="row my-2">
             {/* POPULAR PRODUCT */}
             <h3 className="label-product my-2 pt-4">
-              <span className="heading1 bg-light px-5">Popular Products</span>
+              <span className="heading1 bg-light px-5">Popular </span>
               {/* <button onClick={this.handleTestApi}>test api</button> */}
             </h3>
             <CarouselProduct
